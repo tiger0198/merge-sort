@@ -20,7 +20,6 @@ public class MergeSort {
 
 	private void merge(int[] array,int start,int mid,int end )
 	{
-		//if (mid<end){
 		int[] copyToArray = new int[end - start + 1];
 		
 		int leftIndex = start;
@@ -52,6 +51,5 @@ public class MergeSort {
 		for (int i = 0 ; i<end - start + 1 ;i++){
 			 array[start + i] = copyToArray[i] ;
 		}
-		//}
 	}
 }
